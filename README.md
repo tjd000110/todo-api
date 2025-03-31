@@ -20,7 +20,7 @@ JWT 인증을 통해 사용자별 할 일 관리를 할 수 있도록 설계되�
 1. 프로젝트 클론
 
 git clone https://github.com/yourusername/todo-api.git
-cd todo-api
+
 
 2. npm install
 
