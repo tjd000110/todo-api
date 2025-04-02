@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 const authenticate = (req, res, next) => {
-    const token = req.header('Authorization')?.replace('Bearer', ''); // Authorization 헤더에서 토큰 가져오기
+    const token = req.cookies.token; //쿠키에서 토큰 가져오기 
 
     if(!token) {
         return res.status(401).json({ message: '인증 토큰이 없습니다. '});
