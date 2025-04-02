@@ -26,8 +26,8 @@ git clone https://github.com/yourusername/todo-api.git
 
 3. 환경변수 설정 .env파일 생성 후 아래 내용 입력
 
-PORT=3000
-MONGO_URI=your_mongo_uri
+PORT=3000<br>
+MONGO_URI=your_mongo_uri<br>
 JWT_SECRET=your_secret_key
 
 4. 개발서버 실행
