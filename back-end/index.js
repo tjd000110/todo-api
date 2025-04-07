@@ -5,9 +5,15 @@ const mongoose = require('mongoose');
 const connectDB = require('./config/db'); //DB 분리 
 const authRoutes = require('./routes/auth'); //auth 라우트 추가
 const todoRoutes = require('./routes/todo'); // todo 라우터
+const cors = require('cors');
 require('dotenv').config(); //env 불러오기
 
 const app = express();
+
+app.use(cors({
+    origin: 'http://localhost:5173',
+    credentials: true
+}));
 
 mongoose.set('strictQuery', true); //쿼리 오류방지 
 
